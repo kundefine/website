@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+body {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+}
+main {
+    display: flex;
+    height: 100vh;
+    width: 320px;
+    overflow: hidden;
+    margin: 45px auto;
+    border: 1px solid #ddd;
+}
+
+.sidebar-left {
+    border-right: 1px solid #222;
+    background: none;
+    box-shadow: 1px 0 5px #7bb7ff;
+    padding: 5px;
+    margin-right: 10px;
+}
+.sidebar-right {
+    overflow: auto;
+    padding: 0 10px 10px 0;
+}
+figure {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+figure img {
+    width: 100%;
+    object-fit: cover;
+}
+#about h1 {
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+#about p {
+    margin: 0;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.single-work {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+.single-work:last-of-type {
+    border: none;
+}
+.work-title {
+    margin-bottom: 0;
+}
+.single-work a {
+    color: deepskyblue;
+    text-decoration: none;
+    display: block;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(5px);
+    } 100% {
+        transform: translateY(0px);
+    }
+}
