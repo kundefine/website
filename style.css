@@ -6,14 +6,25 @@ body {
     font-weight: 400;
     line-height: 30px;
     font-size: 16px;
+    color: #fff;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Teko', sans-serif;
     font-weight: 600;
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 main {
     display: flex;
-    height: 100vh;
+    height: auto;
     width: 320px;
     overflow: hidden;
     margin: 45px auto;
